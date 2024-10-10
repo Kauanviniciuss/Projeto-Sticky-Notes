@@ -1,0 +1,123 @@
+* {
+    /*  "*" sendo um seletor universal, que significa que o que estiver dentro das chaves será aplicado/estilizado na página inteira */
+    padding: 0;
+    /* preenchimento da pág */
+    margin: 0;
+    /* margem da pág */
+}
+
+/* valor 0 para se livrar do preenchimento padrão da pagina e da margem */
+
+body {
+    /* estilização do corpo da página */
+    background: rgb(47, 13, 14);
+    /* cor de fundo */
+    font-family: "Architects Daughter";
+    /* mudando a fonte/tipografia da página/body */
+    font-size: 24px;
+    /* Tamanho fixo da fonte */
+
+}
+
+.main-container {
+    /* "." seletor de classe(div class) */
+    /* estilização de toda a aplicação */
+    width: 95%;
+    /* largura do main-cont na pagina */
+    margin: auto;
+    /* auto centraliza a margem na pagina */
+
+}
+
+.container1 {
+    /* estilização do botão de criar novas notas */
+    margin-left: 5%;
+    /*margem esquerda, basicamente adicionando o tamanho da margem do lado esquerdo e movendo o botão a direita */
+
+}
+
+.btn-success {  /* estilizando o botão de criar notas */
+    color: rgb(255, 255, 255); /* a cor das letras */
+    background-color: rgb(0, 0, 0);  /* a cor do botão */
+    border: none;  /* sem borda */
+}
+
+.btn-success:hover {  /* estilizei ao passar o mouse */
+    background-color: rgb(54, 34, 34);  /* a cor que ele vai ficar */
+}
+
+.container2 {
+    display: flex;
+    /* Torna o container flexível, permitindo organizar as notas em linha ou coluna */
+    justify-content: flex-start;
+    /* Alinha as notas para "começar" à esquerda dentro do container */
+    flex-wrap: wrap;
+    /* quando não tiver mais espaço na linha ele vai quebrar para baixo */
+    margin-top: 20px;
+    /* margem entre o botão e conteiner 2 */
+    margin-left: 5%;
+    /* Cria um espaço (margem) à esquerda do container, equivalente a 5% da largura da tela */
+
+}
+
+.container3 {
+    display: none;
+    /* display none serve para esconder tudo, sem ocupar espaço */
+    position: absolute;
+    /* Posiciona o container3 de forma absoluta em relação ao seu elemento pai posicionado(main-container) */
+    top: 26%;
+    /* Define a distância do topo do container3 para 26% da altura do elemento pai(main-container) */
+    left: 40%;
+    /* coloca a parte esquerda do .container3 a 40% da largura total do .main-container. */
+
+}
+
+textarea {
+    /* area de texto */
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
+    /* Cria uma sombra ao redor do textarea 
+    10px (horizontal): Desloca a sombra 10 pixels para a direita.
+    10px (vertical): Desloca a sombra 10 pixels para baixo.
+    24px (blur): O quão "desfocada" a sombra é
+    0px (spread): Define o tamanho da sombra, rgba = é uma sombra preta com 75% de opacidade. */
+    outline: none;
+    /* outline none é para tirar o contorno padrão que existe quando se clica na area */
+    border: none;
+    /* border none para tirar a borda existente */
+    width: 275px;
+    /* define a largura */
+    height: 275px;
+    /* define a altura */
+    padding: 40px 25px 25px 25px;
+    /* espaço interno, a distância entre o conteúdo (texto) e as bordas do elemento.
+    40px: padding superior (em cima).
+    25px: padding direito (à direita).
+    25px: padding inferior (embaixo).
+    25px: padding esquerdo (à esquerda). */
+}
+
+svg {
+    /* estilizando os icones do bootstrap */
+    color: gray;
+    /* a cor que vai ficar os icones */
+}
+
+#check-icon {
+    /* estilizando o icone de check */
+    position: absolute;
+    /* a posição do icone em um lugar especifico em relação ao seu elemento pai (container) */
+    right: 17%;
+    /* Posiciona o ícone a 17% da largura do elemento pai a partir da borda direita */
+    top: 4%;
+    /* Posiciona o ícone a 4% da altura do elemento pai a partir do topo */
+}
+
+#x-icon {
+    /* estilizando o icone de x */
+    position: absolute;
+    /* a posição do icone em um lugar especifico em relação ao seu elemento pai (container) */
+    right: 5%;
+    /* posiciona o icone em 5% pela borda direita do elemento pai */
+    top: 4%;
+    /* Posiciona o icone em 4% no topo do elemento pai */
+}
